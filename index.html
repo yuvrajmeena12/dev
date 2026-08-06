@@ -1,103 +1,60 @@
 <!DOCTYPE html>
-<lang="en"> 
-
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
-
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-</body>
-<h1 style="background-color: blue; color: white; padding: 10px;">HELLO WEB  </h1>
-<h2>HELLO WEB </h2>
-<h3>HELLO WEB </h3>
-<h4>HELLO WEB </h4>
-<h5>HELLO WEB </h5>
+<body>
 
-<h2 id="contact">
-   Contact Section
-</h2>
-<p> this is a paragraph      </p>
-<a href="https://www.google.com">Google</a><br>
-<a href="tel:+929256867715">Call    Google</a><br> 
-<br>
-<br>
+<div class="container">
 
-<a href="https://google.com"
-   style="
-      background: blue;
-      color: white;
-      padding: 10px;                    
-      text-decoration: none;
-   ">
-   //link in button
+    <h1>Student Registration Form</h1>
 
-   Visit
-</a>
-<br>
-<br>
-<br>
-<br>
-<a href="https://google.com">
-<img src="logo.webp" alt="logo"></a>    //link in image
-<br>
+    <form>
 
-<a href="#contact">
-   Go to Contact
-</a>
-<br>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Full Name" required>
 
-<a href="mailto:yuvrajmeena9256@gmail.com
-?subject=Job
-&body=Hello">
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
 
-   Mail
-</a>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number" required>
 
-<table style="border: 1px solid black; border-collapse: collapse;">
-   <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; padding: 10px;"> name</th>
-      <th style="border: 1px solid black; padding: 10px;"> age</th>
-      <th style="border: 1px solid black; padding: 10px;">city</th>
-   </tr>
-   <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; padding: 10px;">yuvraj meena </td>
-      <td style="border: 1px solid black; padding: 10px;">25</td>
-      <td style="border: 1px solid black; padding: 10px;">New York</td>
-   </tr>
-   <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; padding: 10px;">john doe </td>
-      <td style="border: 1px solid black; padding: 10px;">30</td>
-      <td style="border: 1px solid black; padding: 10px;">Los Angeles</td>
-   </tr>
-</table>
-<hr>
-<div style="background-color: lightgreen;">
-<form> 
-   <label for="date">Date:</label>
-   <input type="date" placeholder="Enter your name"><br><br>
-   <input type="file" placeholder="Enter your email"><br><br>
-   <input type="radio" > please cheak the  terms and conditions applied<br><br>
-   <input type="submit" value="Submit">
-</div>   
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" required>
 
-<nav>
-   <l> 
-      <li><a href="#home">Home</a> |
-      <a href="#about">About</a> |
-      <a href="#contact">Contact</a>
-         </li>
-   </l>   <!-- l for not any indexing and dot in front of list itemsS-->
-</nav>
-<br>
+        <label>Gender</label>
 
-<label>Occupation:</label>
-<select>
-   <option value="teacher">teacher</option>
-   <option value="teacher">student</option>
-   </select>
-</form>
+        <div class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Course</label>
+
+        <select>
+            <option>Select Course</option>
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>M.Tech</option>
+        </select>
+
+        <label>Address</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</div>
+
 </body>
 </html>
