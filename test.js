@@ -61,3 +61,4 @@ function testRegistration() {
 }
 
 testRegistration();
+path: "/wrong-register",
