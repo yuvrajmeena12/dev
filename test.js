@@ -12,7 +12,7 @@ function testRegistration() {
     const options = {
         hostname: "localhost",
         port: 3000,
-        path: "/register",
+        path: "/wrong-register",
         method: "POST",
 
         headers: {
@@ -61,4 +61,3 @@ function testRegistration() {
 }
 
 testRegistration();
-path: "/wrong-register",
