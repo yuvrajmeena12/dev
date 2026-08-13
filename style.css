@@ -1,81 +1,320 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:#3498db;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
 }
 
-.container{
 
-    width:420px;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.3);
+/* NAVBAR */
 
+.navbar {
+    height: 70px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #e5e7eb;
 }
 
-h1{
-    text-align:center;
-    margin-bottom:20px;
+.logo {
+    font-size: 23px;
+    font-weight: bold;
 }
 
-label{
-    display:block;
-    margin-top:15px;
-    font-weight:bold;
+.nav-links {
+    display: flex;
+    gap: 30px;
 }
 
-input,
-select,
-textarea{
+.nav-links a {
+    text-decoration: none;
+    color: #555;
 
-    width:100%;
-    padding:10px;
-    margin-top:5px;
-    border:1px solid #ccc;
-    border-radius:5px;
-
+    font-size: 15px;
 }
 
-.gender{
-
-    margin-top:10px;
-    display:flex;
-    gap:15px;
-
+.nav-links a:hover {
+    color: #2563eb;
 }
 
-.gender input{
 
-    width:auto;
+/* HERO */
 
+.hero {
+    max-width: 1200px;
+
+    margin: auto;
+
+    min-height: 550px;
+
+    padding: 70px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
 }
 
-button{
-
-    width:100%;
-    margin-top:20px;
-    padding:12px;
-    background:#34db3f;
-    color:white;
-    border:none;
-    border-radius:5px;
-    font-size:18px;
-    cursor:pointer;
-
+.hero-text {
+    max-width: 650px;
 }
 
-button:hover{
+.tagline {
+    color: #2563eb;
 
-    background:#2980b9;
+    font-size: 14px;
 
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.description {
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 570px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.register-btn,
+.view-btn {
+
+    padding: 14px 24px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.register-btn {
+    background: #2563eb;
+
+    color: white;
+}
+
+.register-btn:hover {
+    background: #1d4ed8;
+}
+
+.view-btn {
+    background: white;
+
+    color: #2563eb;
+
+    border: 1px solid #2563eb;
+}
+
+
+/* CARD */
+
+.hero-card {
+
+    width: 360px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 60px;
+
+    margin-bottom: 15px;
+}
+
+.hero-card h2 {
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* STEPS */
+
+.steps {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.steps div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.steps strong {
+    color: #2563eb;
+
+    font-size: 22px;
+}
+
+.steps span {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* FEATURES */
+
+.features {
+
+    background: white;
+
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+}
+
+.feature-description {
+    margin-top: 10px;
+
+    color: #64748b;
+}
+
+.feature-container {
+
+    max-width: 1050px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    gap: 25px;
+}
+
+.feature-box {
+
+    flex: 1;
+
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: #fafafa;
+}
+
+.feature-icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #172033;
+
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 50px;
+    }
+
+    .description {
+        margin: auto;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+    }
 }
