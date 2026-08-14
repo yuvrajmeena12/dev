@@ -13,7 +13,7 @@ function testRegistration() {
         hostname: "localhost",
         port: 3000,
         path: "/register",
-        method: "POST"
+        method: "POST",
 
         headers: {
             "Content-Type": "application/json",
